@@ -1,0 +1,16 @@
+[package]
+name = "creator-commerce-ab-service"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "creator-commerce-ab"
+path = "src/main.rs"
+
+[lib]
+name = "creator_commerce_ab"
+path = "src/experiment_assignment.rs"
+
+[dependencies]
+reqwest = { version = "0.12", features = ["blocking", "json", "rustls-tls"] }
+serde_json = "1"
